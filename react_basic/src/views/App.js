@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.scss';
 import MyComponent from './example/MyComponent.js';
+import ListTodo from './todos/ListTodo';
 
 function App() {
   return (
@@ -8,9 +9,11 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello world with React js.
+          Simple TODO App with React.js
         </p>
-        <MyComponent />
+        {/* <MyComponent /> */}
+
+        <ListTodo />
 
 
       </header>
