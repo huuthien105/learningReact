@@ -3,6 +3,7 @@ import './App.scss';
 import Nav from './navigation/Nav';
 // import ListTodo from './todos/ListTodo'
 import Home from './example/Home';
+import ListUser from './users/ListUser';
 import {
   BrowserRouter,
   Switch,
@@ -13,6 +14,7 @@ import {
 import MyComponent from './example/MyComponent';
 
 import ListTodo from './todos/ListTodo';
+import DetailUser from './users/DetailUser';
 
 function App() {
   return (
@@ -31,8 +33,14 @@ function App() {
             <Route path="/todo">
               <ListTodo />
             </Route>
+            <Route path="/user" exact>
+              <ListUser />
+            </Route>
             <Route path="/about">
               <MyComponent />
+            </Route>
+            <Route path="/user/:id">
+              <DetailUser />
             </Route>
           </Switch>
         </header>
